@@ -40,6 +40,12 @@ Myth: SIMD compression means high speed but less compression.
 Fact: This is wrong. Some schemes cannot easily be accelerated
 with SIMD instructions, but many that do compress very well.
 
+## Security
+
+It is a low-level library. The inputs are not validated prior to decoding. It is assumed that the provided buffers were generated 
+by the corresponding encoding functions. It is your responsability to ensure the validity of your data. In production systems,
+the use a strong hashing function to check for data integrity is recommended. The library does not provide this functionality.
+
 ## Working with sorted lists of integers
 
 If you are working primarily with sorted lists of integers, then 

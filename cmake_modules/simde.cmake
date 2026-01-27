@@ -2,7 +2,7 @@ include(FetchContent)
 FetchContent_Declare(
         simde
         GIT_REPOSITORY https://github.com/simd-everywhere/simde.git
-        GIT_TAG master
+        GIT_TAG c6ddddc4a5bee9913b60de6757227aa078192663
 )
 FetchContent_MakeAvailable(simde)
 
